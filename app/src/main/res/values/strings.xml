@@ -1,0 +1,13 @@
+<resources>
+    <string-array name="unidades_array">
+        <item>un</item>
+        <item>kg</item>
+        <item>g</item>
+        <item>litro</item>
+        <item>ml</item>
+        <item>cacho</item>
+    </string-array>
+    <string name="buscar_lista">Buscar Lista</string>
+    <string name="sair">Sair</string>
+    <string name="app_name">Lista de Compras</string>
+</resources>

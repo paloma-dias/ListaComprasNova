@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="24dp">
+
+    <EditText
+        android:id="@+id/editNomeItem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nome do Item (Ex: Arroz)"
+        android:inputType="textCapSentences"
+        android:layout_marginBottom="16dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="16dp">
+
+        <EditText
+            android:id="@+id/editQuantidade"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.4"
+            android:hint="Quant."
+            android:inputType="numberDecimal"
+            android:layout_marginEnd="8dp" />
+
+        <Spinner
+            android:id="@+id/spinnerUnidade"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.6"
+            android:spinnerMode="dialog" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Categoria (RF004)"
+        android:textStyle="bold"
+        android:layout_marginBottom="8dp" />
+
+    <RadioGroup
+        android:id="@+id/radioGroupCategoria"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RadioButton android:id="@+id/radioFruta" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Fruta" />
+        <RadioButton android:id="@+id/radioLegume" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Legume/Verdura" />
+        <RadioButton android:id="@+id/radioCarne" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Carne" />
+        <RadioButton android:id="@+id/radioPadaria" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Padaria" />
+        <RadioButton android:id="@+id/radioOutros" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Outros" android:checked="true"/>
+
+    </RadioGroup>
+
+</LinearLayout>
