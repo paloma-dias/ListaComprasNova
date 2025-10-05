@@ -21,7 +21,6 @@ object DataStore {
         val defaultUser = Usuario(nextUserId++, "Usuário Teste", "teste@teste.com", "1234")
         usuarios.add(defaultUser)
 
-        // Exemplo de listas mocadas para o usuário padrão
         val listaSuper = Lista(nextListaId++, "Supermercado", defaultUser.id)
         val listaFesta = Lista(nextListaId++, "Festa de Aniversário", defaultUser.id)
         listas.add(listaSuper)
@@ -29,7 +28,7 @@ object DataStore {
 
         itens.add(Item(nextItemId++, listaSuper.id, "Banana", 1.0, "cacho", Categoria.FRUTA, false))
         itens.add(Item(nextItemId++, listaSuper.id, "Cebola", 0.5, "kg", Categoria.LEGUME, false))
-        itens.add(Item(nextItemId++, listaSuper.id, "Frango", 2.0, "kg", Categoria.CARNE, true)) // Item Comprado
+        itens.add(Item(nextItemId++, listaSuper.id, "Frango", 2.0, "kg", Categoria.CARNE, true))
         itens.add(Item(nextItemId++, listaSuper.id, "Queijo", 250.0, "g", Categoria.OUTROS, false))
     }
 

@@ -22,16 +22,6 @@
             android:layout_gravity="center_vertical"
             android:checked="false" />
 
-        <ImageView
-            android:id="@+id/imageIconeCategoria"
-            android:layout_width="24dp"
-            android:layout_height="24dp"
-            android:layout_marginStart="8dp"
-            android:layout_marginEnd="8dp"
-            android:src="@android:drawable/ic_menu_gallery"
-            android:contentDescription="Ícone da Categoria" />
-
-
         <LinearLayout
             android:layout_width="0dp"
             android:layout_height="wrap_content"

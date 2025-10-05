@@ -5,6 +5,8 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.example.listacomprasnova.databinding.ItemListaBinding
 import com.example.listacomprasnova.model.Lista
+import android.net.Uri
+import com.example.listacomprasnova.R
 
 class ListaAdapter(
     private var listas: List<Lista>,
@@ -32,6 +34,16 @@ class ListaAdapter(
             binding.buttonExcluir.setOnClickListener {
                 onDeleteClick(lista)
             }
+
+            if (lista.imagemUri != null) {
+                binding.imageLista.setImageURI(Uri.parse(lista.imagemUri))
+            } else {
+                binding.imageLista.setImageResource(R.drawable.ic_menu_gallery)
+            }
+
+            binding.root.setOnClickListener { onItemClick(lista) }
+            binding.buttonEditar.setOnClickListener { onEditClick(lista) }
+            binding.buttonExcluir.setOnClickListener { onDeleteClick(lista) }
         }
     }
 

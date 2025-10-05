@@ -171,7 +171,6 @@ class ItensActivity : AppCompatActivity() {
             val unidadeIndex = unidades.indexOf(item.unidade)
             dialogBinding.spinnerUnidade.setSelection(unidadeIndex.coerceAtLeast(0))
 
-            // Mapeamento e seleção do RadioButton
             val categoriaMap = mapOf(
                 Categoria.FRUTA to dialogBinding.radioFruta,
                 Categoria.LEGUME to dialogBinding.radioLegume,
